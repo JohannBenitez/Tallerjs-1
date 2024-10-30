@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <script src="js/utilidades1.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        title = crearNodoConTexto("h1", "Bienvenido al Sitio de Deadpool")
+
+        txt = crearNodoConTexto("p", "Explora ls siguientes paginas para conocer mas sobre Deadpool y sus frases memorables.")
+
+        title2 = crearNodoConTexto("h2", "Menu de Navegacion")
+
+        pxx = crearNodo("ul")
+
+        liUno = crearNodoConTexto("li","")
+        liDos = crearNodoConTexto("li","")
+        txt2 = crearNodoEnlace("Personajes Principales","html/ejercicio1.html","_blank")
+        txt3 = crearNodoEnlace("Fraces Memorables","html/pagina2.html","_blank")
+
+        adicionarNodoAContenedor(txt2, liUno)
+        adicionarNodoAContenedor(txt3, liDos)
+        adicionarNodoAContenedor(liUno, pxx)
+        adicionarNodoAContenedor(liDos, pxx)
+
+        title3 = crearNodoConTexto("h2","¿Quien es Deadpool?")
+
+        px2 = crearNodo("p")
+
+        txt4 = document.createTextNode("Deadpool, tambien conocido como ")
+
+        txt5 = crearNodoConTexto("strong","Wade Wilson,")
+
+        txt6 = document.createTextNode(" es un anti-heroe de Marvel conocido por su humor sarcastico y sus habilidades de combate.")
+
+        adicionarNodoAContenedor(txt4, px2)
+        adicionarNodoAContenedor(txt5, px2)
+        adicionarNodoAContenedor(txt6, px2)
+
+        /*////////////////////////////////*/
+
+        adicionarNodoABody(title)
+        adicionarNodoABody(txt)
+        adicionarNodoABody(title2)
+        adicionarNodoABody(pxx)
+        adicionarNodoABody(title3)
+        adicionarNodoABody(px2)
+        crearImagen("recursos/imagenes/imagen1.jpg","imagen del trailer de la pelicula Deadpool and Wolwerine", "300","170")
+        
+    </script>
+
+</body>
+</html>

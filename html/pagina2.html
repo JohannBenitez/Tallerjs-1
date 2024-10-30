@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases memorables de Deaspool</title>
+    <script src="../js/utilidades1.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        tituloPrincipal = crearNodoConTexto("h1","Frases Memorables de Deadpool")
+
+        txt = crearNodoConTexto("p","Deadpool es conocido por su ingenio rapido y su sentido del humor unico. Aqui hay alguna de sus frases mas memorables")
+
+        title2 = crearNodoConTexto("h2","Citas Famosas")
+
+        px = crearNodo("ul")
+        
+        liUno = crearNodoConTexto("li",'"Maximum effort¡"')
+        liDos = crearNodoConTexto("li",'"Im about to do to you what Limp Bizkit did to music in the late 90s."')
+        liTres = crearNodoConTexto("li",'"Youre probality thinking, This was a superhero movie but that guy in the siut just turned that other guy into a kebab"')
+
+        adicionarNodoAContenedor(liUno,px)
+        adicionarNodoAContenedor(liDos,px)
+        adicionarNodoAContenedor(liTres,px)
+
+        px2 = crearNodo("p")
+
+        txt2 = crearNodoConTexto("strong","Nota:")
+
+        txt3 = document.createTextNode(" Cada una de estas frases captura perfectamente el espiritu sarcastico y subversivo de Deadpool")
+
+        adicionarNodoAContenedor(txt2, px2)
+        adicionarNodoAContenedor(txt3, px2)
+
+        title3 = crearNodoConTexto("h2","Video de las Mejores Escenas")
+
+
+        /*/////////////////////////////////////*/
+
+        adicionarNodoABody(tituloPrincipal)
+        adicionarNodoABody(txt)
+        adicionarNodoABody(title2)
+        adicionarNodoABody(px)
+        adicionarNodoABody(px2)
+        adicionarNodoABody(title3)
+        crearVideo("../recursos/imagenes/videoplayback.mp4", 360, 639, true, false);
+
+    </script>
+
+</body>
+</html>

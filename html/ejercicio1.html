@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/utilidades1.js"></script>
+</head>
+<body>
+    <script>
+        tituloPrincipal = crearNodoConTexto("h1", "Personajes Principales de DeadPool")
+
+        titulo1 = crearNodoConTexto("h2", "DeadPoll(Wade Wilson)")
+        px= crearNodo("p")
+        txt1= document.createTextNode("Deadpoll, tambien conocido como ")
+        nombre = crearNodoConTexto("strong","Wade Wilson")
+        p1 = document.createTextNode(" , es el protagonista de la pelicula. Es un mercenario con un sentido del humor unico y habilidades de combate exepcionales.")
+        adicionarNodoAContenedor(txt1,px)
+        adicionarNodoAContenedor(nombre,px)
+        adicionarNodoAContenedor(p1,px)
+
+       
+
+        titulo2 = crearNodoConTexto("h2", "Vanessa")
+
+        px2 = crearNodo("p")
+        txt2 = crearNodoConTexto("em", "Vanessa Carlysle")
+        txt3 = document.createTextNode("es la novia de Wade Wilson. Es una figura clave en la vida de Deadpool y su motivación principal en la historia.")
+        adicionarNodoAContenedor(txt2,px2)
+        adicionarNodoAContenedor(txt3, px2)
+
+        titulo3 = crearNodoConTexto("h2","Colossus")
+
+        px3 = crearNodo("p")
+        txt4 = document.createTextNode("Colossus, tambien conocido como")
+        txt5 = crearNodoConTexto("abbr", " Coloso")
+        txt6 = document.createTextNode(", es un miembro de los X-Men que intenta guiar a Deadpool hacia un camino mas heroico.")
+
+        adicionarNodoAContenedor(txt4, px3)
+        adicionarNodoAContenedor(txt5, px3)
+        adicionarNodoAContenedor(txt6, px3)
+
+        px4 = crearNodo("p")
+        txt7 = document.createTextNode("EStos son solo algunos de los personajes memorables de la pelicula ")
+        txt8 = crearNodoConTexto("em", "Deadpool")
+
+        adicionarNodoAContenedor(txt7, px4)
+        adicionarNodoAContenedor(txt8, px4)
+
+        /*/////////////////////////////////*/
+        adicionarNodoABody(tituloPrincipal)
+        adicionarNodoABody(titulo1)
+        adicionarNodoABody(px)
+        crearImagen("../recursos/imagenes/imagen1.jpg","imagen del trailer de la pelicula Deadpool and Wolwerine", "300","170")
+        adicionarNodoABody(titulo2)
+        adicionarNodoABody(px2)
+        crearImagen("../recursos/imagenes/imagen2.jpg","xd","300","200")
+        adicionarNodoABody(px3)
+        crearImagen("../recursos/imagenes/imagen3.webp","DD","226","360")
+        adicionarNodoABody(px4)
+    </script>
+</body>
+</html>
